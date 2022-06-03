@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>  Luis-Email-Portfolio </title>
+<link rel="stylesheet" href="./stylez/Flex.css">
+</link>
+</head>
+<body id="main" class="body">
+    <div class="wrapper">
+        <!--NAV DIVS-->
+        <div class="nav">
+            <div class="menu-1">
+                <div class="tab"><a href="index.html" class="index">HOME</a></div>
+                <div class="tab"><a href="about.html" class="index">ABOUT</a></div>
+                <div class="tab"><a href="portfolio.html" class="index">PORTFOLIO</a></div>
+                <div class="tab"><a href="project.html" class="index" id="onlink">PROJECTS</a></div>
+            </div>
+            <!--social nav-->
+            <div class="menu-2">
+                <div class="box-1"><a href="mailto:luisnetworkin@gmail.com" alt="email link"><img src="https://i.ibb.co/xLcdxD1/Email-2.png" class="icon-1" alt="logo"></a></div>
+                <div class="box-2"><a href="https://www.linkedin.com/in/luis-guzman-25777a186" alt="linkedin" target="_blank"><img src="https://i.ibb.co/qWSHpWc/linkedin-circle-black-512.webp" class="icon-2" alt=""></a></div>
+                <div class="box-3"><a href="https://www.fiverr.com/ryolfg" target="_blank"><img src="https://i.ibb.co/7vJHFHL/20220426-002235661-i-OS.png" class="icon-3" alt="icon"></a></div>
+            </div>
+        </div>
+        <!--PROJECTS CONTENT-->
+        <div class="main-4">
+            <div class="page-4">
+                
+                <div class="tabContainer">
+                    <div class="buttonContainer">
+                        <button onclick="showPanel(0,'#0d0d0d')">All</button>
+                        <button onclick="showPanel(1,'#0d0d0d')">Promotional</button>
+                        <button onclick="showPanel(2,'#0d0d0d')">Transactional</button>
+                        <button onclick="showPanel(3,'#0d0d0d')">Landing Page</button>
+                    </div>
+                    <div class="tabPanel"><!--all emails-->
+
+                        <div class="promo-1">
+                           <button class="btn" data-target="#modal1" title="Adventure forward prepared!"></button>
+                            <a href="NorthFace.html" target="_blank"><button class="m-btn" title="Adventure forward prepared!"></button></a>
+                        </div>
+                        <div class="promo-2">
+                            <button class="btn" data-target="#modal2" title="Bitcoin going to 401K?!"></button>
+                            <a href="coinbase.html" target="_blank"><button class="m-btn" title="Bitcoin going to 401K?"></button></a>
+                        </div>
+                        <div class="promo-3">
+                            <button class="btn" data-target="#modal3" title="eFootwear Order Receipt"></button>
+                            <a href="EFootwear.html" target="_blank"><button class="m-btn" title="eFootwear Order Receipt"></button></a>
+                        </div>
+                        <div class="promo-4">
+                            <button class="btn" data-target="#modal4" title="Apple Password Reset"></button>
+                            <a href="Apple.html" target="_blank"><button class="m-btn" title="Apple Password Reset"></button></a>
+                        </div>
+                        <div class="promo-5">
+                            <button class="btn" data-target="#modal5" title="Inspire your Photography!"></button>
+                            <a href="Canon.html" target="_blank"><button class="m-btn" title="Inspire your Photography!"></button></a>
+                        </div>
+                        <div class="promo"></div>
+                    </div>
+                    <div class="tabPanel"><!--promotional emails-->
+                        <div class="promo-1">
+                            <button class="btn" data-target="#modal1" title="Adventure forward prepared!"></button>
+                             <a href="NorthFace.html" target="_blank"><button class="m-btn" title="Adventure forward prepared!"></button></a>
+                         </div>
+                         <div class="promo-2">
+                             <button class="btn" data-target="#modal2" title="Shop Winter boots!"></button>
+                             <a href="coinbase.html" target="_blank"><button class="m-btn" title="Shop Winter boots!"></button></a>
+                         </div>
+                         <div class="promo"></div>
+                        <div class="promo"></div>   
+                        <div class="promo"></div>
+                        <div class="promo"></div>                 
+                    </div>
+                    <div class="tabPanel"><!--transactional emails-->
+                        <div class="promo-3solo">
+                            <button class="btn" data-target="#modal3" title="Shop Winter boots!"></button>
+                            <a href="EFootwear.html" target="_blank"><button class="m-btn" title="Shop Winter boots!"></button></a>
+                        </div>
+                        <div class="promo-4solo">
+                            <button class="btn" data-target="#modal4" title="Shop Winter boots!"></button>
+                            <a href="Apple.html" target="_blank"><button class="m-btn" title="Shop Winter boots!"></button></a>
+                        </div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                    </div>
+                    <div class="tabPanel"><!--landing page-->
+                        <div class="promo-5solo">
+                            <button class="btn" data-target="#modal5" title="Inspire your Photography!"></button>
+                            <a href="Canon.html" target="_blank"><button class="m-btn" title="Inspire your Photography!"></button></a>
+                        </div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                        <div class="promo"></div>
+                    </div>
+                </div>
+
+                <div class="modal" id="modal1">
+                    <img src="https://i.ibb.co/tmRPp5B/north.png" alt="modalimg" class="modalImg">
+                    <h6 class="modalh6">NorthFace</h6>
+                    <p class="modalP">Promo-Email</p>
+                    <a href="NorthFace.html" target="_blank" class="modalA">VIEW</a>
+                </div>
+    
+                <div class="modal" id="modal2">
+                    <img src="https://i.ibb.co/NLdLbmK/coin.png" alt="modalimg" class="modalImg">
+                    <h6 class="modalh6">CoinBase</h6>
+                    <p class="modalP">Newsletter Email</p>
+                    <a href="coinbase.html" target="_blank" class="modalA">VIEW</a>
+                </div>
+            <!--modal pop-ups-->
+                <div class="modal" id="modal3">
+                    <img src="https://i.ibb.co/frhFsb3/efoot.png" alt="modalimg" class="modalImg">
+                    <h6 class="modalh6">E-FootWear</h6>
+                    <p class="modalP">Transaction Receipt</p>
+                    <a href="EFootwear.html" target="_blank" class="modalA">VIEW</a>
+                </div>
+
+                <div class="modal" id="modal4">
+                    <img src="https://i.ibb.co/d66r4gG/apple.png" alt="modalimg" class="modalImg">
+                    <h6 class="modalh6"></h6>
+                    <p class="modalP">Password Reset</p>
+                    <a href="Apple.html" target="_blank" class="modalA">VIEW</a>
+                </div>
+
+                <div class="modal" id="modal5">
+                    <img src="https://i.ibb.co/k2sbkj6/canon-page.png" alt="modalimg" class="modalImg">
+                    <h6 class="modalh6">Canon</h6>
+                    <p class="modalP">Landing Page</p>
+                    <a href="Canon.html" target="_blank" class="modalA">VIEW</a>
+                </div>
+                
+    
+            <!--overlay-->
+            <div id="overlay"></div>
+            
+            </div>
+        </div>
+
+        <!--MOBILE TAB NAV-->
+        <div class="mob-nav">
+            <div class="mob-menu">
+                <h4>LG7</h4>
+                 <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+                     <span class="sr-only">MENU</span>
+                 </button>
+            </div> 
+         </div>
+         <div id="primary-nav" class="primary-nav" data-visible="false">
+             <div class="mob-tab"><a href="index.html">HOME</a></div>
+             <div class="mob-tab"><a href="about.html">ABOUT</a></div>
+             <div class="mob-tab"><a href="portfolio.html">PORTFOLIO</a></div>
+             <div class="mob-tab"><a href="project.html">PROJECT</a></div>
+              <!--MOBILE SOCIALS-->
+            <div class="m-socials">
+                <div class="box-1"><a href="mailto:luisnetworkin@gmail.com" alt="Email" target="_blank"><img src="https://i.ibb.co/xLcdxD1/Email-2.png" class="icon-1" alt="logo"></a></div>
+                <div class="box-2"><a href="https://www.linkedin.com/in/luis-guzman-25777a186" alt="linkedin" target="_blank"><img src="https://i.ibb.co/qWSHpWc/linkedin-circle-black-512.webp" class="icon-2" alt=""></a></div>
+                <div class="box-3"><a href="https://www.fiverr.com/ryolfg" alt="Fivver" target="_blank"><img src="https://i.ibb.co/7vJHFHL/20220426-002235661-i-OS.png" class="icon-3" alt="icon"></a></div>
+            </div>
+        </div> 
+         </div>
+
+        <!--MOBILE PROJECT-->
+    </div>
+    <script src="./scriptz/Magic.js"></script>
+    <script type="text/javascript">
+        //mobile navigator
+          const primaryNav = document.querySelector(".primary-nav");
+          const navToggle = document.querySelector(".nav-toggle");
+      
+          navToggle.addEventListener("click", () => {
+          const visibility = primaryNav.getAttribute("data-visible");
+      
+          if (visibility === "false") {
+              primaryNav.setAttribute("data-visible", true);
+              navToggle.setAttribute("aria-expanded", true);
+          }   else if (visibility === "true") {
+              primaryNav.setAttribute("data-visible", false);
+              navToggle.setAttribute("aria-expanded", false);
+          }
+      });
+      
+      
+          </script>
+
+</body>
+</html>
