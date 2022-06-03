@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"  xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <title>Apple Password Reset</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">  
+  <meta http-equiv="X-UA-compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-sheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <!--Helps DPI scaling in Outlook 2007-2013, makes background images in 72ppi outlook render at correct size-->
+  <!--[if mso]>
+		<xml>
+      <o:OfficeDocumentSettings>
+      <o:AllowPNG/>
+			<o:PixelsPerInch>96</o:PixelsPerInch>
+			</o:OfficeDocumentSettings>
+		</xml>
+	<![endif]-->
+  <style type="text/css">
+  /* Normalise on all email clients, removes the padding / margin and add size to compose a full window. word space for ganga gmail */
+  .body {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    word-wrap: normal;
+    word-spacing:normal;
+  }
+  /*GMAIL removes head section, instead is used as U TAG, use class body for flexible css*/
+  u + .body a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  }
+  /*main reset for links that auto-detected addresses, number, names, etc*/
+  #body a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    }
+  /* apple mac/ios blue link reset*/
+  /*a[x-apple-data-detectors] {
+    color: inherit!important;
+    text-decoration: none!important;
+    font-size: inherit!important;
+    font-family: inherit!important;
+    font-weight: inherit!important;
+    line-height: inherit!important;
+    } 
+[x-apple-data-detectors-type="calendar-event"] {
+    color: inherit !important;
+    -webkit-text-decoration-color: inherit !important;
+    text-decoration: none !important;
+    }*/
+
+  /*Samsung Mail link blue reset*/  
+
+  /*#MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+  }*/
+
+  /*outlook app IOS use id1 for whole email 2id for parent*/
+
+/*#id1 #id2 a[x-apple-data-detectors]{
+  color: inherit !important;
+  text-decoration: inherit !important;
+}*/
+/* Fix for Outlook links color fix for links and visited links */
+
+/*span.MsoHyperlink {
+  color: inherit !important;
+  mso-style-priority: 99 !important;
+  }
+
+span.MsoHyperlinkFollowed {
+  color: inherit !important;
+  mso-style-priority: 99 !important;
+      }*/
+
+/* normalise link attributes in Apple Mail / iOS Mail apps - to match the parent element */
+
+/*#root [x-apple-data-detectors=true],
+a[x-apple-data-detectors=true]{
+	color: inherit !important;
+	text-decoration: inherit !important;
+}*/
+
+  
+
+  /*image spacing & link fixes*/
+  img{
+    border:0;
+    height:auto;
+    line-height:100%;
+    outline:none;
+    text-decoration:none;
+  }
+  /* a reset on outlook.com & outlook for windows desktop, set color instead of inherit just incase*/
+  a{
+    color:inherit!important;
+    color:#000000;
+    text-decoration:none;
+  }
+  a img{
+    border:none;
+  }
+
+  /* What it does: Fixes webkit & outlook table spacing & border-size issue. */
+  table{
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    mso-table-lspace:0pt!important;
+    mso-table-rspace:0pt!important;
+  }
+  
+  /* What it does: Stops Outlook from adding extra spacing to tables. */
+  table td{
+    border-collapse:collapse!important;
+  }
+
+  table, td, h1, p{
+      font-family:Helvetica, verdana, sans-serif;
+  }
+
+  /* What it does: Centers email on Android 4.4 */
+  div[style*="margin: 16px 0"] {
+    margin:0 !important;
+  }
+
+  /* What it does: Forces Samsung Android mail clients to use the entire viewport. */
+  #MessageViewBody,
+  #MessageWebViewDiv{
+    width: 100% !important;
+  }
+  /*old samsung mails versions reset h1-h6 & mail.ru only h1 & h3 fontsize  */
+  h1 {
+  margin:0.67em 0;
+  font-size:2em;
+  }
+h2 {
+  margin:0.83em 0;
+  font-size:1.5em;
+  }
+
+/* html[dir] h3 is to increase specificity to override Outlook.com to reset */
+html[dir] h3, h3 {
+  margin:1em 0;
+  font-size:1.17em;
+  }
+  </style>
+  <!--[if mso]>
+    <style type="text/css">
+      
+      table{
+        border-spacing: 0;
+        border-collapse: collapse;
+        mso-table-lspace:0pt!important;
+        mso-table-rspace:0pt!important;
+      }
+      
+      td{
+        boder-collapse:collapse;
+      }
+
+      table, td, h1, p{
+      font-family:verdana, sans-serif;
+      }
+      a{
+        text-decoration:none;
+      }
+
+    </style>
+  <![endif]-->
+</head>
+
+<body class="body" id="ubody" width="100%" height="100%" style=" width:100%; height:100%; margin:0; padding:0; background-color:#ffffff; word-wrap:normal; word-spacing:normal; font-family:sans-serif, Verdana, sans-serif;">
+  <!-- visually hidden preheader text-->
+  <div style="font-size:0px; color:#fafdfe; line-height:1px; mso-line-height-rule:exactly; display:none; max-width:0px; max-height:0px; opacity:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+  <!--Add Preheader text here(85-100 characters in length)-->
+    Email preview test via mailchimps VS code.
+  </div>
+  <!--main wrapper table-->
+  <table class="Table-Wrapper" id="Body-table" width="100%" height="100%" role="article" aria-roledescription="email" aria-label="email name" lang="en" dir="ltr" cellspacing="0" cellpadding="0" border="0" style="-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; border-spacing:0; margin:0; padding:0; width:100%; height:100%; table-layout:fixed; background-color:#ffffff;">
+  
+    <!--main table-->  
+    <tr>
+      <td align="center" style="padding:0; mso-padding-alt:0;">
+        <table class="Main-Table" id="Template" width="1055" height="100%" role="presentation" cellspacing="0" cellpadding="0" border="0" style="border-spacing:0; background-color:#ffffff; max-width:1055px; width:100%; height:100%; margin:0 auto;">
+        <!--CONTENT STARTS-->
+
+          <tr>
+            <td aria-hidden="true" style="padding:0; mso-padding-alt:0; height:100px; width:100%; background-color:#ffffff;">
+              &nbsp;
+            </td>
+          </tr>
+          <!--apple icon-->
+          <tr>
+            <td align="left" style="padding:0px 15px; mso-padding-alt:0px 15px;">
+              <a href="https://apple.com"><img src="https://ci5.googleusercontent.com/proxy/__N2fmF6U24JtHvUwLeQKPeHCvriPxDVR3lLAFG2nCtYAji5_S6r0qufmnFA_aPGO-uvyUI05RHKS5kEjkuIGvxdBXV9Uqr_Ef9wZbDygH4a0ad2wBaaNHY=s0-d-e1-ft#https://statici.icloud.com/emailimages/v4/common/apple_logo_web@2x.png" alt="apple-icon" width="25" height="auto" border="0" style="width:25px; height:auto; display: block;"></a>
+            </td>
+          </tr>
+          <!--text-->
+          <tr>
+            <td align="center" style="padding:0; mso-padding-alt:0;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing:0;"> 
+          <tr>
+            <td align="center" style="padding:50px 15pxpx 0px; mso-padding-alt:50px 15px 0px; color:#000000;">
+              <p style="font-size:35px; mso-font-size:35px;">Your Apple ID password has been reset.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding:0 15px; mso-padding-alt:0px 15px; color:#000000;">
+              <p style="font-size:18px; mso-ansi-font-size:18px;">Dear Ryo OS,</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding:0px 15px; mso-padding-alt:0px 15px; color:#000000;">
+              <p style="font-size:18px; mso-ansi-font-size:18px; margin-top:6px;">The password for your Apple ID (<a href="mailto:" style="color:blue!important; text-decoration:underline;">JoeDoe@gmail.com</a>) has been successfully reset.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding:0px 15px; mso-padding-alt:0px 15px; color:#000000; line-height:26px; mso-line-height-rule:exactly;">
+              <p style="font-size:18px; mso-ansi-font-size:18px; margin-top:6px;">If you didn’t make this change or if you believe an unauthorized person has accessed your account, go to <a href="https://iforgot.apple.com/" target="_blank" style="color:blue!important; text-decoration:underline;">iforgot.apple.com</a> to reset your password immediately. Then sign into your Apple ID account page at <a href="https://appleid.apple.com/" target="_blank" style="color:blue!important; text-decoration:underline;">https://appleid.apple.com</a> to review and update your security settings.</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="padding:0px 15px; mso-padding-alt:0px 15px; color:#000000;">
+              <p style="font-size:18px; mso-ansi-font-size:18px; margin-top:6px;">If you need additional help, contact <a href="https://www.apple.com/support" target="_blank" style="color:blue!important; text-decoration:underline;">Apple Support</a>.</p>
+            </td>
+          </tr>
+            <td align="left" style="padding:0px 15px 25px; mso-padding-alt:0px 15px; color:#000000;">
+              <p style="font-size:18px; mso-ansi-font-size:18px; margin-top:6px;">Apple Support</p>
+            </td>
+          </tr>
+          </table>
+          </td>
+          </tr>
+          <!--footer-->
+          <tr>
+            <td style="padding:0px 0px 35px; mso-padding-alt:0px; background-color: #ffffff;">
+              <table role="presentation" width="100%"  border="0" cellspacing="0" cellpadding="0" style=" width:100%;border-spacing:0;">
+                <tr>
+                  <td align="left" bgcolor="#f2f2f2" style="padding:0; color: #575757;">
+                    <p style="margin:15px 15px 5px; font-size:12px; mso-ansi-font-size:12px;"><a href="https://appleid.apple.com/" target="_blank">Apple ID</a>&nbsp;|&nbsp;<a href="https://www.apple.com/support" target="_blank">Support</a>&nbsp;|&nbsp;<a href="https://www.apple.com/legal/privacy" target="_blank">Privacy Policy</a></p>
+                    <p style="margin:5px 15px 15px; font-size:12px; mso-ansi-font-size:12px;">Copyright © 2022 One Apple Park Way, Cupertino, CA 95014, United States, All rights reserved.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!--CONTENT ENDED-->
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
