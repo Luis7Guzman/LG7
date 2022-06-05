@@ -1149,6 +1149,7 @@ font-size:75%!important;
 /*portfolio*/
 .wrapper .main-3{
     height:1000px;
+    -moz-height:1500px;
 }
 .wrapper .document{
     flex-direction: column;
