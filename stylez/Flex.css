@@ -15,17 +15,15 @@ html{
     padding:0;
     border:none;
     outline:none;
-    width:100%;
-    height:100%;
 }
-.body {
+body{
     background-color: #000000;
     padding:0;
     margin:0;
     outline:none;
     border:none;
     width:100%;
-    height:100%;
+    height:100vh;
 }
 .wrapper {
     background-color: #000000;
@@ -192,18 +190,6 @@ html{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity:0;
-    animation: fadein ease-in 1000ms;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-}
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 .page-1 {
     position: absolute;
@@ -268,19 +254,7 @@ html{
     left: 0px;
     width: 100%;
     height: 100%;
-    opacity: 0;
     object-fit: cover;
-    animation: fadein ease-in 1000ms;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-}
-@keyframes fadein{
-    from{
-        opacity:0%;
-    }
-    to{
-        opacity:100%;
-    }
 }
 .page-2 {
     position: absolute;
@@ -381,7 +355,7 @@ html{
     margin-top: 2px;
     font-family: 'aldrich', verdana, arial;
 }
-/*PORTFOLIO TAB*/
+/*PORTFOLIO SECTION*/
 .main-3 {
     width: 100%;
     height: 100%;
@@ -399,14 +373,15 @@ html{
     justify-content: center;
     align-items: center;
 }
-/*PORTFOLIO SECTION*/
 .document{
-    width:100%;
-    height:100%;
+    position: absolute;
+    width:inherit;
+    height:80%;
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
     align-items: center;
+    transform:scale(0.85);
 }
 .doc-1, .doc-2, .doc-3{
     width:100%;
@@ -569,16 +544,17 @@ h5{
     align-items: center;
 }
 .tabContainer {
-    max-width: 1130px;
-    max-height: 450px;
     width: 100%;
     height: 100%;
+    transform: scale(0.85);
 }
 .tabContainer .buttonContainer {
     height: 15%;
+    flex-wrap: wrap;
 }
 .tabContainer .buttonContainer button {
     cursor: pointer;
+    text-align: center;
     padding: 10px;
     border: none;
     outline: 0;
@@ -598,7 +574,7 @@ h5{
 }
 @keyframes in0 {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
     to {
         opacity: 100%;
@@ -610,7 +586,7 @@ h5{
     transition: all ease-in 250ms;
 }
 .tabContainer .tabPanel {
-    height: 85%;
+    height: 25%;
     width: 100%;
     font-family: 'aldrich', verdana, arial;
     color: #fafafa;
@@ -656,7 +632,7 @@ h5{
 }
 @keyframes in1 {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
     to {
         opacity: 100%;
@@ -680,7 +656,7 @@ h5{
 }
 @keyframes in2 {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
     to {
         opacity: 100%;
@@ -704,7 +680,7 @@ h5{
 }
 @keyframes in3 {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
     to {
         opacity: 100%;
@@ -728,7 +704,7 @@ h5{
 }
 @keyframes in4 {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
     to {
         opacity: 100%;
@@ -752,7 +728,7 @@ h5{
 }
 @keyframes in5 {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
     to {
         opacity: 100%;
@@ -818,22 +794,26 @@ h5{
     width:100%;
     height:100%;
     display:none;
+    justify-content:center!important;
+    align-items: center!important;
 }
 #overlay.active{
-    display:flex;
-    justify-content:center;
-    align-items: center;
+    display:flex!important;
+    justify-content:center!important;
+    align-items: center!important;
 }
  .modal{
     position: absolute;
-    top:0;
-    max-width:800px;
-    max-height:500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width:700px;
+    max-height:400px;
     z-index:99;
     width:100%;
     height:100%;
     margin:0;
-    transform:translateY(25%);
     text-align: center;
     font-family:'aldrich',verdana,arial;
     display: flex;
@@ -852,7 +832,7 @@ h5{
 }
 @keyframes modal {
     from {
-        opacity: 0%
+        opacity: 0%;
     }
 
     to {
@@ -863,7 +843,7 @@ h5{
     display:none;
 }
 .btn{
-    outline: none;
+    outline:0;
     border:0;
     width: 100%;
     height:100%;
@@ -910,6 +890,7 @@ h5{
     width:150px;
     height:150px;
 }
+
 /*MEDIA ON IPAD & TABLETS MOBILE*/
 /*PORTRAIT */
 /*MEIDA FOR SMALL IPHONE & NOTE 10 PLUS*/
@@ -923,8 +904,16 @@ h5{
 }
 /*portfolio*/
 .wrapper .main-3{
-    height: 1075px!important;
+
 }
+.document .doc-1, .doc-2, .doc-3{
+    margin: 25px 5px!important;
+}
+/*project*/
+.tabContainer .buttonContainer button{
+    font-size: 9px!important;
+}
+
 }
 @media (orientation: portrait) and (max-width:415px) {
     /*nav bar*/
@@ -939,7 +928,7 @@ h5{
     position:absolute;
     top:0;
     z-index:90;
-    padding:15px;
+    padding:0px 15px;
 }
 .primary-nav .m-socials{
     width:100%;
@@ -973,13 +962,11 @@ h5{
 .box-2 .icon-2{
     max-width:25px;
     aspect-ratio:1;
-
 }
 .box-3 .icon-3{
     max-width:23px;
     aspect-ratio:1;
 }
-
 .box-1 .icon-1:hover{
     filter:drop-shadow(0px 0px 3px blue);
 }
@@ -1127,6 +1114,7 @@ h5{
     padding:25px!important;
     display:flex;
     flex-direction: column;
+    transform: scale(0.8)!important;
 }
 .card .pfpic{
     opacity:0.9;
@@ -1147,25 +1135,25 @@ font-size:75%!important;
     font-size:85%!important;
 }
 /*portfolio*/
-.wrapper .main-3{
-    height:1000px;
-    -moz-height:1500px;
-}
-.wrapper .document{
-    flex-direction: column;
-    justify-content: space-between;
-}
-.doc-1, .doc-2, .doc-3{
-    margin:15px 0px;
+.body .wrapper{
+    height:800px;
 }
 .page-3 .document{
-    height:100%;
-    overflow:visible;
+    flex-direction: column;
+    align-items:center;
+    height:60%;
+    transform: scale(0.6)!important;
+}
+.doc-1, .doc-2, .doc-3{
+    margin:5px 0px;
 }
 .e1, .e2, .e3, .x1, .x2, .x3, .d1, .d2, .d3{
     padding:15px 0px;
 }
 /*project mobile*/
+.wrapper .main-4{
+    padding:0px;
+}
 .main-4 .page-4{
    max-height:100%;
 }
@@ -1408,16 +1396,6 @@ font-size:75%!important;
     display:none!important;
 }
 }
-@media (orientation:portrait) and (max-width:600px){
-.page-4 .modal{
-    transform: translateY(75%);
-}
-}
-@media (orientation:portrait) and (max-width:700px){
-.main-4 .page-4 .modal{
-    transform:translateY(75%);
-}
-}
 @media (orientation:portrait) and (max-width:770px){
 /*home*/
 .index{
@@ -1428,14 +1406,10 @@ font-size:75%!important;
     width:455px;
     transform:scale(0.8);
 }  
-/*project*/
-#overlay{
-    width:100%;
+
+
 }
-.page-4 .modal{
-    transform:translateY(65%) scale(0.8);
-}
-}
+
 @media (orientation:portrait) and (max-width:835px){
 /*home*/
 .index{
@@ -1449,21 +1423,62 @@ font-size:75%!important;
 .page-3 .document{
     transform:scale(0.9);
 }
+.document .doc-1, .doc-2, .doc-3{
+    max-width:600px; 
+    margin:35px 5px;
+}
 /*project*/
+#overlay .modal{
+    top:auto;
+    left:auto;
+    transform:scale(0.8);
+}
+}
 
-.page-4 .modal{
-    transform:translateY(50%);
-}
-}
 @media (orientation: portrait) and (min-width:1023px) {
-.page-4 .modal{
-    transform:translateY(100%);
+/*about*/
+.page-2 .card{
+    transform:scale(0.8)!important;
+}
+.document .doc-1, .doc-2, .doc-3{
+    max-width:750px; 
+    margin:35px 5px;
 }
 }
-@media (orientation: portrait) and (min-width:1079px) {
-.page-4 .modal{
-        transform:translateY(125%);
+
+@media (orientation: portrait) and (min-height:1361px) {
+/*ipad 12.9 - 2 desktop screens*/
+#overlay .modal{
+    top:auto;
+    left: auto;
+    transform: scale(0.8);
 }
+}
+
+@media (orientation: portrait) and (min-width:1377px) {
+    /*about*/
+    .page-2 .card{
+        flex-direction: column;
+        height:1000px;
+        width:600px;
+    }
+    .card .pfpic{
+        min-width:100%;
+    }
+    .card .txtbox{
+        text-align:center;
+        height:50%;
+    }
+    /*portfolio*/
+    .page-3 .document{
+        flex-direction: column;
+        max-height:1000px;
+        max-width:500px;
+    }
+    .document .doc-1, .doc-2, .doc-3{
+        max-width:750px; 
+        margin:35px 5px;
+    }
 }
 @media (orientation: portrait) and (max-width:1081px) {
 .page-2 .card{
@@ -1473,7 +1488,6 @@ font-size:75%!important;
     height:855px;
     padding:50px 0px 0px;
 }
-
 .txtbox .b1, .b2, .b3, .b4, .b5{
     text-align:center;
 }
@@ -1483,7 +1497,6 @@ font-size:75%!important;
     justify-content:space-around;
     transform:scale(0.8);
 }
-
 .edu-doc .e2{
     flex-direction: row;
 }
@@ -1495,12 +1508,15 @@ font-size:75%!important;
 }
 }
 
-@media screen and (min-width:1919px){
-    .page-4 .modal{
-        transform: translateY(55%);
-    }
-}
 /*LANDSCAPE VIEW*/
+@media (orientation: landscape) and (max-width:1112px) {
+.page-3 .document{
+    transform: scale(0.9);
+}
+.document .doc-1, .doc-2, .doc-3{
+    margin:0px 35px;
+}
+}
 @media (orientation: landscape) and (max-width:736px) {
 .wrapper .nav{
     display: none;
@@ -1513,7 +1529,7 @@ font-size:75%!important;
     position:absolute;
     top:0;
     z-index:90;
-    padding:15px;
+    padding:0px;
 }
 .mob-menu{
     display:flex;
@@ -1524,58 +1540,9 @@ font-size:75%!important;
     height:100%;
     background-color:transparent;
     z-index:91;
+    padding:0px 15px 0px;
 }
-.primary-nav .m-socials{
-    width:100%;
-    height: auto;
-    padding:0px;
-    display:flex;
-    flex-direction:row;
-    justify-content:left;
-    align-items:center;
-}
-.m-socials .box-1{
-    width:auto;
-    filter:invert(1);
-    padding:0px 2px;
-}
-.m-socials .box-2{
-    width:auto;
-    filter:invert(1);
-    padding:0px 2px;
-}
-.m-socials .box-3{
-    width:auto;
-    filter:invert(1);
-    padding:2px 2px 0px!important;
-    margin:0;
-}
-.box-1 .icon-1{
-    max-width:25px;
-    aspect-ratio:1;
-    animation: ghost ease-in 2000ms;
-}
-.box-2 .icon-2{
-    max-width:25px;
-    aspect-ratio:1;
-    animation: ghost ease-in 2000ms;
-}
-.box-3 .icon-3{
-    max-width:23px;
-    aspect-ratio:1;
-    animation: ghost ease-in 2000ms;
-}
-@keyframes ghost{
-    from{
-        opacity:0%;
-    }
-    to{
-        opacity:100%;
-    }
-}
-@media (orientation: landscape) and (max-width:1081px) {
 
-}
 .box-1 .icon-1:hover{
     filter:drop-shadow(0px 0px 3px blue);
 }
@@ -1702,6 +1669,10 @@ font-size:75%!important;
     font-size:25px;
     margin-left:1px;
 }
+/*about*/
+.page-2 .card{
+    transform:scale(0.9);
+}
 .card .txtbox{
     height:100%;
 }
@@ -1727,6 +1698,16 @@ font-size:75%!important;
     scale:80%;
 }
 /*portfolio*/
+.wrapper .main-3{
+padding-top:25px;    
+}
+.page-3 .document{
+    height:265px;
+    transform:scale(0.8)!important;
+}
+.document .doc-1, .doc-2, .doc-3{
+    margin:5px 18px;
+}
 .doc-1 .edu-doc{
     padding:5px 10px;
 }
@@ -1791,6 +1772,9 @@ font-size:75%!important;
     margin:7px 0px;
 }
 /*Project section*/
+.wrapper .main-4{
+    padding:0;
+}
 .page-4 .tabContainer{
     max-height:100%;
     transform:scale(80%);
@@ -2019,5 +2003,70 @@ font-size:75%!important;
 .promo-5solo .m-btn:hover{
     opacity:1;
     cursor: pointer;
+}
+.primary-nav .m-socials{
+    width:100%;
+    height: auto;
+    padding:0px;
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    align-items:center;
+}
+.m-socials .box-1{
+    width:auto;
+    filter:invert(1);
+    padding:0px 2px;
+}
+.m-socials .box-2{
+    width:auto;
+    filter:invert(1);
+    padding:0px 2px;
+}
+.m-socials .box-3{
+    width:auto;
+    filter:invert(1);
+    padding:2px 2px 0px!important;
+    margin:0;
+}
+.box-1 .icon-1{
+    max-width:25px;
+    aspect-ratio:1;
+    animation: ghost ease-in 2000ms;
+}
+.box-2 .icon-2{
+    max-width:25px;
+    aspect-ratio:1;
+    animation: ghost ease-in 2000ms;
+}
+.box-3 .icon-3{
+    max-width:23px;
+    aspect-ratio:1;
+    animation: ghost ease-in 2000ms;
+}
+@keyframes ghost{
+    from{
+        opacity:0%;
+    }
+    to{
+        opacity:100%;
+    }
+}
+}
+@media (orientation: landscape) and (max-width:570px) {
+    .wrapper .main-3{
+        padding-top:35px;
+    }
+    .page-3 .document{
+        height:245px;
+        transform: scale(0.8)!important;
+    }
+    .document .doc-1, .doc-2, .doc-3{
+        margin:5px 15px;
+    }
+}
+@media (orientation: landscape) and (min-height:1079px){
+.modal{
+    transform: translateY(560%)!important
 }
 }
