@@ -1517,7 +1517,7 @@ font-size:75%!important;
     margin:0px 35px;
 }
 }
-@media (orientation: landscape) and (max-width:736px) {
+@media (orientation: landscape) and (max-width:790px) {
 .wrapper .nav{
     display: none;
 }
