@@ -247,7 +247,8 @@ body{
     margin: 0;
     padding:0;
 }
-/*    position: absolute;
+/*.vid-2{  
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -1135,13 +1136,17 @@ h5{
 }
 .e1, .x1, .d1, h5{
     font-size:1em;
+    -moz-font-size:1em;
 }
 .e2, .d2, .x2{
     flex-direction:row;
     scale:80%;
+    -moz-scale:80%;
+    -moz-transform:scale(80%);
 }
 .e3, .x3, .d3, p{
     font-size:0.8em;
+    -moz-font-size:0.8em;
 }
 /*project*/
 .tabContainer{
@@ -1270,6 +1275,7 @@ a .m-btn{
 }
 .e3, .x3, .d3, p{
     font-size:1em;
+    -moz-font-size:1em;
 }
 /*project*/
 
