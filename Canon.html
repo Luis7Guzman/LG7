@@ -38,16 +38,10 @@ html{
     width:100%;
     height:100%;
 }
-/*main reset for links that auto-detected addresses, number, names, etc TEST*/
-    #body a {
-    color: inherit;
-    text-decoration: none;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    }
-    
+a{
+    color:inherit!important;
+    text-decoration:none;
+  }
 .wrapper{
     width:100%;
     height:100%;
@@ -100,15 +94,14 @@ html{
     width:100%;
     height:100%;
     max-width:600px;
-    max-height:300px;
+    max-height:200px;
     text-align: center;
+    padding: 0px 10px;
 }
 .text{
-    position: relative;
-    top:85px;
     font-family:Tahoma, verdana, sans-serif;
     color:#ffffff;
-    font-size:40px;
+    font-size:2.2em;
     font-weight:bold;
     line-height:55px;
     letter-spacing:1px;
@@ -129,10 +122,11 @@ html{
     top:-16px;
     height:60px;
     padding:15px;
-    font-size:20px;
+    font-size:1em;
     border-radius:4px;
     border:2px solid #e3e3e3;
     margin-right:25px;
+    width:40%;
 }
 #signature:hover{
     box-shadow:0px 0px 5px #ffffff;
@@ -184,7 +178,7 @@ html{
 .unit-2{
     color:#000000;
     font-family: sans-serif;
-    padding:0px 25px;
+    padding:0px 35px;
 }
 .unit-3{
     color:#000000;
@@ -237,24 +231,21 @@ html{
     background-repeat:no-repeat;
 }
 .txtcase2{
-    position: relative;
-    top:135px;
+    transform:translate(0%,30%);
     width:100%;
     height:100%;
     padding: 0px 35px;
     text-align:left;
 }
 .txtcase4{
-    position: relative;
-    top:120px;
+    transform:translate(0%,30%);
     width:100%;
     height:100%;
     padding: 0px 35px;
     text-align:left;
 }
 .txtcase6{
-    position: relative;
-    top:145px;
+    transform:translate(0%,30%);
     width:100%;
     height:100%;
     padding: 0px 35px;
@@ -319,6 +310,9 @@ html{
     position: relative;
     top:35px;
 }
+.cube-4 #signature{
+    width:35%;
+}
 /*footer*/
 .footer{
     width:100%;
@@ -357,351 +351,639 @@ html{
 .space{
     margin-left:20px;
 }
-@media (orientation: portrait) and (max-width:1025.99px) {
-    .case-1{
-        background-position:center;
-    }
-}    
-@media (orientation: portrait) and (max-width:835.99px) {
-    .col-logo{
-        width:85px;
-        height:85px;
 
-    }
-    .txtp{
-        font-size:25px;
-    }
-    .descp{
-        font-size:16px;
-        line-height:25px;
-    }
-    .case-2, .txtcase2{
-        top:75px;
-    }
-    .case-4, .txtcase4{
-        top:75px;
-    }
-    .case-6, .txtcase6{
-        top:85px;
-    }
-}
-    @media (orientation: portrait) and (max-width:769.99px) {
-        .col-logo{
-        width:75px;
-        height:75px;
-    }
-    .txtp{
-        font-size:20px;
-    }
-    .descp{
-        font-size:15px;
-    }
-    .unit-1, .unit-2, .unit-3{
-        padding:0px 25px;
-    }
-    .case-4, .txtcase4{
-        top:50px;
-    }
-    .case-6, .txtcase6{
-        top:65px;
-    }
-    .footer{
-        padding:75px 55px; 
-    }    
+/*MEIDA FOR SMALL IPHONE & NOTE 10 PLUS*/
 
-}
-@media (orientation: portrait) and (max-width:698.99px) {
-    .ptip{
-        font-size: 27px;
-    }
-    .pinfo{
-        font-size:16px;
-    }
-    .case-2, .txtcase2{
-        top:55px;
-    }
-    .case-4, .txtcase4{
-        top:45px;
-    }
-    .linker{
-        font-size:14px;
-    }
-    .policy{
-        font-size: 12px;
-    }
-    .bird{
-        width:25px;
-        height:25px;
-    }
-    .face{
-        width:25px;
-        height:25px;
-    }
-    .link{
-        width:25px;
-        height:25px;
-    }
-}
-@media (orientation: portrait) and (max-width:415.99px) {
+/*PORTRAIT*/
+
+@media (orientation: portrait) and (min-width:318.98px) {
+/*top section*/
 .nav{
-    padding:15px 15px;
+    padding:15px 15px 15px 10px;
+}
+.cube-1{
+    max-height:125px;
 }
 .text{
-    font-size:25px;
-    line-height:35px;
-}
-.submit{
-    padding:15px 28px;
+    line-height:1.5em;
+    font-size: 1.4em;
 }
 .cube-2{
-    position: relative;
-    top:-35px;
-    display: flex;
-    flex-direction: column;
+    max-height:0pxs;
 }
 #signature{
-    width:65%;
-    margin-bottom:15px;
-    margin-right:0px;
-}
-.Container{
-    flex-direction: column;
-    max-height:100%;
-}
-.unit-1, .unit-2, .unit-3{
-    padding:15px;
-}
-.col-logo{
-    width:80px;
-    height:80px;
-}
-.txtp{
-    font-size:25px;
-}
-.row-1, .row-2, .row-3{
-    flex-direction: column;
-    height:100%;
-}
-.case-1,.case-3,.case-5{
-    height:250px;
-}
-.case-2, .case-6{
-    height:365px;
-}
-.case-4{
-    height:385px;
-}
-.case-2 .txtcase2{
-    top:50px;
-}
-.case-4 .txtcase4{
-    top:35px;
-}
-.cube-3 .sign{
-    font-size:25px;
-}
-.cube-4{
-    flex-direction: column;
-    align-items:center;
-}
-.footer{
-    padding:75px 15px;
-}
-.both{
-    flex-direction: column;
-}
-.half-1, .half-2{
-    width:100%;
-    text-align:center;
-}
-.linker{
-    font-size:14px;
-}
-.policy{
-    font-size:12px;
-}
-.bird, .face, .link{
-    width:18px;
-    height:18px;
-}
-.ptip{
-    font-size:25px;
-}
-.descp{
-    font-size:15px;
+    width:50%;
+    height:45%;
 }
 
-.case-6 .txtcase6{
-    top:60px;
+.cube-2 .submit{
+    padding:10px 28px;
+    opacity:100%;
 }
+
+/*description columns*/
+.Container{
+    flex-direction:column;
+    min-height:100%!important;
 }
-@media (orientation: portrait) and (max-width:376.99px) {
-.cube-2{
-    top:-55px;
+.unit-1, .unit-2, .unit-3{
+    padding:5px 15px;
 }
-.case-2 .txtcase2{
-    top:30px;
-}
-.case-4 .txtcase4{
-    top:25px;
-}
-.case-6 .txtcase6{
-    top:45px;
-}
+
 .col-logo{
     width:70px;
     height:70px;
 }
 .txtp{
-    font-size:22px;
-}
-.half-1{
-    padding:0px 10px;
-}
-.cube-3 .sign{
-    font-size:22px;
-}
-}
-
-@media (orientation: portrait) and (max-width:321.99px) {
-.text{
-    font-size:20px;
-    line-height:35px;
-}
-.cube-2{
-    top:-55px;
-}
-#signature{
-    width:55%;
-    height:50%;
-}
-.cube-4 #signature{
-    height:55px;
-}
-.case-2 {
-    height:415px;
-}
-.case-4{
-    height:465px;
-}
-.case-6{
-    height:385px;
-}
-.case-6 .txtcase6{
-    top:25px;
-}
-.ptip{
-    font-size: 20px;
-}
-.txtp{
-    font-size:20px;
+    font-size:1.2em; 
 }
 .descp{
-    font-size:12px;
+    font-size:0.9em;
+}
+/*storage row x stack columns*/
+.storage{
+    width:100%;
+    height:100%;
+}
+.row-1, .row-2, .row-3{
+    flex-direction: column;
+    height: 100%;
+
+}
+.case-1, .case-3, .case-5{
+    height:250px;
+    width:100%;
+}
+.case-2, .case-4, .case-6{
+    height:250px;
+}
+.txtcase2, .txtcase4, .txtcase6{
+    transform: translateY(10%);
+    padding:15px;
+}
+.ptip{
+    font-size:1.5em;
+}
+.pinfo{
+    font-size:0.8em;
+    line-height:20px;
+}
+/*sign up footer*/
+.outro{
+    background-position:right;
+}
+.cube-3{
+    padding:0px 15px;
 }
 .cube-3 .sign{
-    font-size:20px;
+    font-size:1.4em;
 }
+.cube-4 #signature{
+    width:50%;
+    height:45px;
+}
+.cube-4 .submit{
+    opacity:100%;
+    padding:10px 28px;
+}
+/*last footer*/
+.both{
+    flex-direction: column;
+    padding:0px;
+    max-height:100%!important;
+}
+.half-1, .half-2{
+    text-align:center;
+    width:100%;
+    height:100%;
+}
+.linker{
+    font-size:0.8em;
+}
+.policy{
+    font-size:0.7em;
+}
+.half-2{
+    flex-direction:row;
+}
+.bird, .face, .link{
+    width:25px;
+    height:25px;
 }
 
-/*LANDSCAPE VIEW*/
-@media (orientation: landscape) and (max-width:737.99px) {
-    .nav{
-        padding:15px 35px;
-    }
-    .case-1{
-        background-position:center;
-    }
-    .case-2, .txtcase2{
-        top:55px;
-    }
-    .case-4, .txtcase4{
-        top:30px;
-    }
-    .case-6, .txtcase6{
-        top:55px;
-    }
-    .footer{
-        padding:65px 35px;
-    }
+
 }
-@media (orientation: landscape) and (max-width:668.99px) {
-    .text{
-        font-size: 35px;
-        line-height:40px;
+
+@media (orientation:portrait) and (min-width:600px) {
+/*logo nav*/
+.brand{
+    width:135px;
+    height:50px;
+}
+.button{
+    font-size:1.3em;
+}
+/*main top*/
+.cube-1{
+    max-height:155px;
+}
+.text{
+    font-size: 2em;
+}
+#signature{
+    width:35%;
+}
+/*description columns*/
+.col-logo{
+    width:100px;
+    height:100px;
+}
+.txtp{
+    font-size:2em; 
+}
+.descp{
+    font-size:1.7em;
+}
+.unit-1, .unit-2, .unit-3{
+    padding:0px 15px;
+}
+/*storage row x stack columns*/
+.storage{
+    width:100%;
+    height:100%;
+}
+.row-1, .row-2, .row-3{
+    flex-direction: row-reverse;
+    height: 375px;
+
+}
+.case-1, .case-3, .case-5{
+    height:375px;
+    width:100%;
+}
+.case-1{
+    background-position: center;
+}
+.case-2, .case-4, .case-6{
+    height:100%;
+}
+.txtcase2{
+    transform: translateY(20%);
+}
+.txtcase4{
+    transform:translateY(15%);
+}
+.txtcase6{
+    transform: translateY(20%);
+}
+.ptip{
+    font-size:1.7em;
+}
+.pinfo{
+    font-size:1em;
+    line-height:25px;
+}
+/*2nd sign up*/
+.outro{
+    max-height: 375px;
+}
+.cube-3{
+    width:100%;
+    text-align:center;
+    color:#ffffff;
+}
+.cube-3 .sign{
+    font-size:1.8em;
+}
+ 
+}
+
+@media (orientation:portrait) and (min-width:1030px){
+.nav{
+    padding:55px 45px 55px 35px;
+}
+.brand{
+    width:190px;
+    height:75px;
+}
+.button{
+    font-size:2.2em;
+}
+/*main text*/
+.cube-1{
+    max-height: 250px;
+}
+.text{
+    font-size:2.7em;
+    line-height:1.5em;
+}
+#signature{
+    width:65%;
+    height:70%;
+}
+.submit{
+    font-size:1.7em;
+}
+/*column description*/
+.col-logo{
+    width:185px;
+    height:185px;
+}
+.unit-1, .unit-2, .unit-3{
+    padding:0px 75px;
+}
+.txtp{
+    font-size:2.7em; 
+}
+.descp{
+    line-height:50px;
+    font-size:2.1em;
+}
+/*row-column stack*/
+.row-1, .row-2, .row-3{
+    height: 475px;
+}
+.case-1, .case-3, .case-5{
+    height:475px;
+}
+.case-2, .case-4, .case-6{
+    height:100%;
+}
+.txtcase2{
+    padding:5px 25px;
+    transform: translateY(30%);
+}
+.txtcase4{
+    padding:5px 25px;
+    transform:translateY(25%);
+}
+.txtcase6{
+    padding:5px 25px;
+    transform: translateY(30%);
+}
+.ptip{
+    font-size:2em;
+}
+.pinfo{
+    font-size:1.3em;
+    line-height:25px;
+}
+/*2nd sign up*/
+.outro{
+    max-height: 475px;
+}
+.cube-3{
+    width:100%;
+    text-align:center;
+    color:#ffffff;
+}
+.cube-3 .sign{
+    font-size:2.7em;
+}
+.cube-4{
+    padding-top:15px;
+}
+.cube-4 #signature{
+    width:30%;
+    height:70px;
+}
+/*footer*/
+.footer{
+    max-height:270px;
+}
+.half-1 .policy{
+    margin-top:25px;
+}
+.half-2{
+    padding-top:35px;
+}
+.linker{
+    font-size:1.2em;
+}
+.policy{
+    font-size:1em;
+}
+.half-2{
+    flex-direction:row;
+}
+.bird, .face, .link{
+    width:35px;
+    height:35px;
+}
+
+}
+
+/*WIDE MOBILE VIEW SCREENS*/
+
+/*LANDSCAPE*/
+@media (orientation:landscape) and (min-width:478px){
+    .nav{
+        padding:10px 15px 10px 10px;
+        max-height:55px;
     }
-    .cube-2{
-        position: relative;
-        top:-35px;
+    .brand{
+        width:75px;
+        height:30px;
+    }
+    .button{
+        font-size:0.8em;
+    }
+    .cube-1{
+        max-height:65px;
+    }
+    .text{
+        font-size:1.2em;
+        line-height:1.5em;
+    }
+    .cube-2 #signature{
+        height:45%;
+    }
+    .cube-2 .submit{
+        padding:12px 28px;
+        font-size:0.8em;
+    }
+    /*text col description*/
+    .Container{
+        max-height:250px;
     }
     .col-logo{
-        width:75px;
-        height:75px;
+        width:55px;
+        height:55px;
     }
     .txtp{
-        font-size:20px;
+        font-size:1em;
     }
     .descp{
-        font-size:16px;
-        line-height:25px;
+        font-size:0.5em;
+        line-height:1.5em;
     }
-    .ptip{
-        font-size:25px;
-    }
-    .pinfo{
-        font-size:16px;
-    }
+    /*row-col img edit*/
+.row-1, .row-2 ,.row-3{
+    max-height:250px;
 }
-    @media (orientation: landscape) and (max-width:569.99px) {
-        .nav{
-            padding:18px 25px;
-        }
-        .text{
-        font-size: 30px;
-        line-height:40px;
-        }
-        .cube-2{
-            top:5px;
-        }
-        #signature{
-            height:55%;
-            width:45%;
-        }
-        .submit{
-            padding:14px 25px;
-        }
-        .txtp{
-        font-size:16px;
-        }
-        .descp{
-        font-size: 14px;
-        line-height:20px;
-        }
-        .ptip{
-            font-size:20px;
-        }
-        .pinfo{
-            font-size:14px;
-        }
-        .case-2 .txtcase2{
-            top:50px;
-        }
-        .case-4 .txtcase4{
-            top:15px;
-        }
-        .both{
-            flex-direction: column;
-        }
-        .half-1{
-            text-align: center;
-            width:100%;
-        }
-        .half-2{
-            text-align: center;
-            width:100%;
-        }
+.case-1, .case-3, .case-5{
+    height:250px;
+    width:100%;
+}
+.case-2, .case-4, .case-6{
+    height:250px;
+}
+.txtcase2, .txtcase4, .txtcase6{
+    transform: translateY(20%);
+    padding:15px;
+}
+.ptip{
+    font-size:1em;
+}
+.pinfo{
+    font-size:0.5em;
+    line-height:20px;
+}
+/*2nd signup */
+.outro{
+    max-height:250px;
+}
+.cube-3 .sign{
+    font-size:1.2em;
+}
+.cube-4 #signature{
+    width:30%;
+    height:40px;
+}
+.cube-4 .submit{
+    font-size:0.9em;
+    padding:8px 28px;
+}
+/*footer*/
+.footer{
+    width:100%;
+    height:100%;
+    padding:35px 70px;
+    max-height: 150px;
+}
+.both{
+   flex-direction: column;
+}
+.half-1, .half-2{
+    text-align: center;
+}
+.half-2{
+    flex-direction:row;
+    padding-top:25px;
+}
+.linker{
+    font-size:0.8em;
+}
+.policy{
+    font-size:0.5em;
+}
+.bird, .face, .link{
+    width:20px;
+    height:20px;
+}
+}
 
-    }
+@media (orientation:landscape) and (min-width:900px){
+.nav{
+    padding:35px 20px 35px 15px;
+}
+.brand{
+    width:120px;
+    height:45px;
+}
+.button{
+    font-size:1.3em;
+}
+/*main description*/
+.cube-1{
+    max-height: 165px;
+}
+.text{
+    font-size:2em;
+    line-height:1.5em;
+}
+#signature{
+    width:35%;
+    height:70%;
+}
+/*col row logo description*/
+.Container{
+    max-height:350px;
+}
+.col-logo{
+    width:85px;
+    height:85px;
+}
+.txtp{
+    font-size:1.7em;
+}
+.descp{
+    font-size:1em;
+    line-height:1.5em;
+}
+
+/*row-col img edit*/
+.row-1, .row-2 ,.row-3{
+    max-height:350px;
+}
+.case-1, .case-3, .case-5{
+    height:350px;
+    width:100%;
+}
+.case-2, .case-4, .case-6{
+    height:350px;
+}
+.txtcase2, .txtcase4, .txtcase6{
+    transform: translateY(20%);
+    padding:15px;
+}
+.ptip{
+    font-size:1.8em;
+}
+.pinfo{
+    font-size:1em;
+    line-height:1.5em;
+}
+/*2nd sign up*/
+.outro{
+    max-height: 350px;
+}
+.cube-3 .sign{
+    font-size:1.8em;
+}
+.cube-4{
+    padding-top:15px;
+}
+.cube-4 #signature{
+    width:30%;
+    height:55px;
+}
+.cube-4 .submit{
+    font-size:1em;
+}
+/*footer*/
+.footer{
+    padding:70px 70px 50px;
+    max-height: 235px;
+}
+.both{
+   flex-direction: column;
+}
+.half-1, .half-2{
+    text-align: center;
+}
+.half-2{
+    flex-direction:row;
+    padding-top:25px;
+}
+.linker{
+    font-size:1em;
+}
+.policy{
+    font-size:0.8em;
+}
+.bird, .face, .link{
+    width:30px;
+    height:30px;
+}
+
+}
+
+@media (orientation:landscape) and (min-width:1200px){
+.nav{
+    max-height:55px;
+    padding:20px 25px 20px 15px;
+}
+.brand{
+    width:95px;
+    height:35px;
+}
+.button{
+    font-size:0.8em;
+}
+/*main description*/
+.cube-1{
+    max-height: 100px;
+}
+.text{
+    font-size:1.8em;
+    line-height:1.5em;
+}
+#signature{
+    width:45%;
+    height:70%;
+}
+/*col row logo description*/
+.Container{
+    max-height:435px;
+}
+.col-logo{
+    width:100px;
+    height:100px;
+}
+.txtp{
+    font-size:1.8em;
+}
+.descp{
+    font-size:1em;
+    line-height:1.5em;
+}
+/*row-col img edit*/
+.row-1, .row-2, .row-3{
+    max-height:450px;
+}
+.case-1, .case-3, .case-5{
+    height:450px;
+    width:100%;
+}
+.case-2, .case-4, .case-6{
+    height:450px;
+}
+.txtcase2, .txtcase4, .txtcase6{
+    transform: translateY(25%);
+    padding:15px;
+}
+.ptip{
+    font-size:2em;
+}
+.pinfo{
+    font-size:1.2em;
+    line-height:1.5em;
+}
+/*2nd signup */
+.outro{
+    max-height:385px;
+}
+.cube-3 .sign{
+    font-size:1.6em;
+}
+.cube-4 #signature{
+    width:30%;
+    height:50px;
+}
+.cube-4 .submit{
+    font-size:1em;
+    padding:8px 28px;
+}
+/*footer*/
+.footer{
+    padding:60px 70px 50px;
+    max-height: 200px;
+}
+.half-2{
+    padding-top:25px;
+}
+.linker{
+    font-size:0.8em;
+}
+.policy{
+    font-size:0.6em;
+}
+.bird, .face, .link{
+    width:25px;
+    height:25px;
+}
+}
 </style>
 </link>
 </head>
@@ -709,7 +991,7 @@ html{
     <div class="wrapper">
     <!--NAV MENU-->
     <div class="nav">
-        <a href="https://www.usa.canon.com/internet/portal/us/home" target="_blank"><img src="https://i.ibb.co/PZMfs48/canon.png" width="100px" height="35px"></a>
+        <a href="https://www.usa.canon.com/internet/portal/us/home" target="_blank"><img src="https://i.ibb.co/PZMfs48/canon.png" class="brand" width="100px" height="35px"></a>
         <a href="https://myprofile.americas.canon.com/us/register" class="button" target="_blank">Sign Up</a>    
     </div>
     <!--MAIN DIV-->
