@@ -358,7 +358,6 @@ body{
     position:absolute;
     top:0;
     left:0;
-    padding-top:85px;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -1126,15 +1125,10 @@ h5{
 }
 
 /*portfolio*/
-.page-3{
-    padding-top:65px;
-    -moz-padding-top:105px;
-}
 .document{
+    padding-top:75px;
     flex-direction: column;
-    -moz-transform:scale(85%);
-    -webkit-transform:scale(85%);
-    -ms-transform:scale(85%);
+    transform:scale(80%);
 }
 .doc-1, .doc-2, .doc-3{
     margin:10px 0px;
