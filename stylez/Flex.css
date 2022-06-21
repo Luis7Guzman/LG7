@@ -196,7 +196,7 @@ body{
     top: 0px;
     width: 100%;
     height: 100%;
-    background-color:rgba(19, 19, 19, 0.7);
+
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -261,7 +261,6 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(24, 24, 24, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,6 +275,7 @@ body{
     padding:25px;
     transform:scale(0.9);
     background-color: rgba(24, 24, 24, 0.8);
+    box-shadow:inset 0px 0px 10px #0d0d0d;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -1126,8 +1126,15 @@ h5{
 }
 
 /*portfolio*/
+.page-3{
+    padding-top:65px;
+
+}
 .document{
     flex-direction: column;
+    -moz-transform:scale(85%);
+    -webkit-transform:scale(85%);
+    -ms-transform:scale(85%);
 }
 .doc-1, .doc-2, .doc-3{
     margin:10px 0px;
@@ -1140,8 +1147,7 @@ h5{
 }
 .e2, .d2, .x2{
     flex-direction:row;
-    scale:80%;
-    -moz-scale:80%;
+    transform:scale(80%);
     -moz-transform:scale(80%);
 }
 .e3, .x3, .d3, p{
@@ -1511,6 +1517,9 @@ a .m-btn{
     filter:drop-shadow(0px 0px 3px purple);
 }
 /*home*/
+.main-1 .vid-1 {
+    height:100vh;
+}
 .page-1{
     line-height:25px;
 }
@@ -1578,15 +1587,15 @@ a .m-btn{
 }
 .e3 p{
     font-size:0.3em;
-    -moz-font-size:0.5em;
+    -moz-font-size:1.3em;
 }
 .x3 p{
     font-size:0.3em;
-    -moz-font-size:0.5em;
+    -moz-font-size:1.3em;
 }
 .d3 p{
     font-size:0.3em;
-    -moz-font-size:0.5em;
+    -moz-font-size:1.3em;
 }
 /*project*/
 .tabContainer{
