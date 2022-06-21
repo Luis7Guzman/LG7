@@ -1128,7 +1128,7 @@ h5{
 /*portfolio*/
 .page-3{
     padding-top:65px;
-
+    -moz-padding-top:105px;
 }
 .document{
     flex-direction: column;
