@@ -1087,6 +1087,14 @@ h5{
     filter:drop-shadow(0px 0px 3px purple);
 }
 /*home*/
+.main-1{
+    min-height:100vh;
+    height:100%;
+}
+.main-1 .vid-1{
+    height:100%;
+    min-height:100vh;
+}
 .page-1{
     line-height:25px;
 }
@@ -1126,7 +1134,8 @@ h5{
 
 /*portfolio*/
 .document{
-    padding-top:75px;
+    padding-top:15px;
+    -moz-padding-top:85px;
     flex-direction: column;
     transform:scale(80%);
 }
@@ -1512,7 +1521,7 @@ a .m-btn{
 }
 /*home*/
 .main-1 .vid-1 {
-    height:100vh;
+    min-height:100vh;
 }
 .page-1{
     line-height:25px;
@@ -1580,16 +1589,13 @@ a .m-btn{
     font-size:0.8em;
 }
 .e3 p{
-    font-size:0.3em;
-    -moz-font-size:1.3em;
+    font-size:0.6em;
 }
 .x3 p{
-    font-size:0.3em;
-    -moz-font-size:1.3em;
+    font-size:0.6em;
 }
 .d3 p{
-    font-size:0.3em;
-    -moz-font-size:1.3em;
+    font-size:0.6em;
 }
 /*project*/
 .tabContainer{
