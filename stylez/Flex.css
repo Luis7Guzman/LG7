@@ -1135,7 +1135,7 @@ h5{
 /*portfolio*/
 .document{
     padding-top:15px;
-    -moz-padding-top:150px;
+    -moz-transform:translateY(35px);
     flex-direction: column;
     transform:scale(80%);
 }
