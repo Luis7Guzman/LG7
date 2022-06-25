@@ -120,7 +120,7 @@ a{
 #signature{
     position: relative;
     top:-16px;
-    height:60px;
+    max-height:40px;
     padding:15px;
     font-size:1em;
     border-radius:2px;
@@ -234,28 +234,13 @@ a{
     background-position:center;
     background-repeat:no-repeat;
 }
-.txtcase2{
-    transform:translate(0%,30%);
-    width:100%;
-    height:100%;
-    padding: 0px 35px;
+.txtcase2, .txtcase4, .txtcase6{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
     text-align:left;
+    padding:15px;
 }
-.txtcase4{
-    transform:translate(0%,30%);
-    width:100%;
-    height:100%;
-    padding: 0px 35px;
-    text-align:left;
-}
-.txtcase6{
-    transform:translate(0%,30%);
-    width:100%;
-    height:100%;
-    padding: 0px 35px;
-    text-align:left;
-}
-
 .ptip{
     font-family: sans-serif;
     font-size:30px;
@@ -383,7 +368,7 @@ a{
     font-size: 1.4em;
 }
 .cube-2{
-    max-height:0pxs;
+    max-height:0px;
 }
 #signature{
     width:50%;
@@ -393,7 +378,7 @@ a{
 .cube-2 .submit{
     padding:10px 28px;
     opacity:100%;
-    -moz-text-size-adjust:14px;
+    font-size:1em;
 }
 
 /*description columns*/
@@ -432,10 +417,6 @@ a{
 .case-2, .case-4, .case-6{
     height:300px;
 }
-.txtcase2, .txtcase4, .txtcase6{
-    transform: translateY(20%);
-    padding:15px;
-}
 .ptip{
     font-size:1.5em;
 }
@@ -460,7 +441,7 @@ a{
 .cube-4 .submit{
     opacity:100%;
     padding:10px 28px;
-    -moz-text-size-adjust:14px;
+    font-size:1em;
 }
 /*last footer*/
 .footer{
@@ -546,15 +527,6 @@ a{
 .case-2, .case-4, .case-6{
     height:100%;
 }
-.txtcase2{
-    transform: translateY(25%);
-}
-.txtcase4{
-    transform:translateY(20%);
-}
-.txtcase6{
-    transform: translateY(25%);
-}
 .ptip{
     font-size:1.7em;
 }
@@ -636,18 +608,6 @@ a{
 }
 .case-2, .case-4, .case-6{
     height:100%;
-}
-.txtcase2{
-    padding:5px 25px;
-    transform: translateY(25%);
-}
-.txtcase4{
-    padding:5px 25px;
-    transform:translateY(20%);
-}
-.txtcase6{
-    padding:5px 25px;
-    transform: translateY(25%);
 }
 .ptip{
     font-size:2.7em;
@@ -757,10 +717,6 @@ a{
 .case-2, .case-4, .case-6{
     height:285px;
 }
-.txtcase2, .txtcase4, .txtcase6{
-    transform: translateY(20%);
-    padding:15px;
-}
 .ptip{
     font-size:1em;
 }
@@ -862,10 +818,6 @@ a{
 .case-2, .case-4, .case-6{
     height:485px;
 }
-.txtcase2, .txtcase4, .txtcase6{
-    transform: translateY(25%);
-    padding:15px;
-}
 .ptip{
     font-size:1.8em;
 }
@@ -966,9 +918,6 @@ a{
 .case-2, .case-4, .case-6{
     height:500px;
 }
-.txtcase2, .txtcase4, .txtcase6{
-    transform: translateY(25%);
-}
 .ptip{
     font-size:2em;
 }
@@ -1056,9 +1005,6 @@ a{
 }
 .case-2, .case-4, .case-6{
     height:700px;
-}
-.txtcase2, .txtcase4, .txtcase6{
-    transform: translateY(30%);
 }
 .ptip{
     font-size:2.7em;
