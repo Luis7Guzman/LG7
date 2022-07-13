@@ -56,7 +56,7 @@ a{
     align-items: center;
     width:100%;
     height:100%;
-    max-height:68px;
+    min-height:67px;
     background-color:#f9f9f9;
     padding:15px 95px 15px 75px;
     font-family:Tahoma, sans-serif;
@@ -367,7 +367,10 @@ a{
     line-height:1.5em;
     font-size: 1.4em;
 }
-
+/*main*/
+.main{
+    height:85vh;
+}
 #signature{
     width:50%;
     height:45%;
@@ -379,27 +382,36 @@ a{
 .cube-2 .submit{
     padding:10px 28px;
     opacity:100%;
-    font-size:0.7em;
+    font-size:1em;
 }
 
 /*description columns*/
 .Container{
     flex-direction:column;
-    min-height:100%!important;
+    min-height:900px!important;
 }
-.unit-1, .unit-2, .unit-3{
-    padding:5px 15px;
+.unit-1{
+    padding:35px 25px 5px;   
 }
-
+.unit-2{
+    padding:5px 25px;
+}
+.unit-3{
+    padding:5px 25px 35px;  
+}
+.case-1{
+    background-position:center;
+}
 .col-logo{
-    width:70px;
-    height:70px;
+    width:100px;
+    height:100px;
 }
 .txtp{
-    font-size:1.2em; 
+    font-size:1.5em;
 }
 .descp{
-    font-size:0.9em;
+    font-size:1em;
+    font-weight:lighter;
 }
 /*storage row x stack columns*/
 .storage{
@@ -412,18 +424,18 @@ a{
 
 }
 .case-1, .case-3, .case-5{
-    height:300px;
+    height:400px;
     width:100%;
 }
 .case-2, .case-4, .case-6{
-    height:300px;
+    height:400px;
 }
 .ptip{
     font-size:1.5em;
 }
 .pinfo{
-    font-size:0.8em;
-    line-height:20px;
+    font-size:1.2em;
+    line-height:33px;
 }
 /*sign up footer*/
 .outro{
@@ -433,7 +445,8 @@ a{
     padding:0px 15px;
 }
 .cube-3 .sign{
-    font-size:1.4em;
+    font-size:1.5em;
+    line-height:35px;
 }
 .cube-4{
     position: relative;
@@ -446,11 +459,13 @@ a{
 .cube-4 .submit{
     opacity:100%;
     padding:10px 28px;
-    font-size:0.7em;
+    font-size:1em;
 }
 /*last footer*/
 .footer{
-    padding:50px 28px 35px;
+    max-height:225px;
+    padding:50px 29px 35px;
+
 }
 .both{
     flex-direction: column;
@@ -463,13 +478,15 @@ a{
     height:100%;
 }
 .linker{
-    font-size:0.7em;
+    font-size:1em;
+    line-height:25px;
 }
 .policy{
-    font-size:0.6em;
+    font-size:0.8em;
 }
 .half-2{
     flex-direction:row;
+    padding:35px 0px 0px;
 }
 .bird, .face, .link{
     width:25px;
@@ -484,6 +501,9 @@ a{
 .brand{
     width:135px;
     height:50px;
+}
+.nav{
+    max-height:fit-content;
 }
 .button{
     font-size:1.3em;
@@ -558,9 +578,7 @@ a{
 }
 .half-2{
     padding-top:15px;
-}
-
- 
+} 
 }
 
 @media (orientation:portrait) and (min-width:1030px){
@@ -682,74 +700,99 @@ a{
     .button{
         font-size:0.8em;
     }
-    .cube-1{
-        max-height:65px;
+    .main{
+        min-height:600px;
     }
     .text{
-        font-size:1.2em;
+        font-size:2.2em;
         line-height:1.5em;
+    }
+    .cube-1{
+        max-height:200px;
+        max-width:100%;
+        padding: 0px 25px;
+    }
+    .cube-2{
+        max-height:auto;
     }
     .cube-2 #signature{
         height:45%;
+        width:48%;
     }
     .cube-2 .submit{
-        padding:8px 28px;
-        font-size:0.7em;
+        padding:10px 28px;
+        font-size:1em;
     }
     /*text col description*/
     .Container{
-        max-height:300px;
+        min-height:1000px;
+        flex-direction:column;
     }
     .col-logo{
-        width:55px;
-        height:55px;
+        width:100px;
+        height:100px;
+    }
+    .unit-1, .unit-2, .unit-3{
+        max-height:fit-content;
+    }
+    .unit-1{
+        padding:2em 11em 2em;
+    }
+    .unit-2{
+        padding:2em 11em;   
+    }
+    .unit-3{
+        padding:2em 11em 2em;   
     }
     .txtp{
-        font-size:1em;
+        font-size:1.5em;
     }
     .descp{
-        font-size:0.5em;
+        font-size:1em;
         line-height:1.5em;
     }
     /*row-col img edit*/
 .row-1, .row-2 ,.row-3{
-    max-height:285px;
+    max-height:350px;
+}
+.case-1{
+    background-position:center;
 }
 .case-1, .case-3, .case-5{
-    height:285px;
+    height:350px;
     width:100%;
 }
 .case-2, .case-4, .case-6{
-    height:285px;
+    height:350px;
 }
 .ptip{
-    font-size:1em;
+    font-size:1.2em;
 }
 .pinfo{
-    font-size:0.5em;
+    font-size:0.7em;
     line-height:20px;
 }
 /*2nd signup */
 .outro{
-    max-height:250px;
+    max-height:335px;
 }
 .cube-3 .sign{
-    font-size:1.2em;
+    font-size:1.5em;
 }
 .cube-4 #signature{
-    width:30%;
+    width:50%;
     height:40px;
 }
 .cube-4 .submit{
-    font-size:0.7em;
-    padding:8px 28px;
+    font-size:1em;
+    padding:10px 28px;
 }
 /*footer*/
 .footer{
     width:100%;
     height:100%;
-    padding:35px 70px;
-    max-height: 150px;
+    padding:75px 35px 35px;
+    max-height: 250px;
 }
 .both{
    flex-direction: column;
@@ -762,14 +805,14 @@ a{
     padding-top:25px;
 }
 .linker{
-    font-size:0.8em;
+    font-size:1em;
 }
 .policy{
-    font-size:0.5em;
+    font-size:0.8em;
 }
 .bird, .face, .link{
-    width:20px;
-    height:20px;
+    width:30px;
+    height:30px;
 }
 }
 
@@ -798,7 +841,8 @@ a{
 }
 /*col row logo description*/
 .Container{
-    max-height:450px;
+    min-height:450px;
+    flex-direction: row;
 }
 .col-logo{
     width:85px;
@@ -810,6 +854,10 @@ a{
 .descp{
     font-size:1em;
     line-height:1.5em;
+}
+
+.unit-1, .unit-2, .unit-3{
+    padding:0px 35px;
 }
 
 /*row-col img edit*/
@@ -889,19 +937,33 @@ a{
 }
 /*main description*/
 .cube-1{
-    max-height: 100px;
+    max-width: 600px;
 }
 .text{
-    font-size:1.8em;
+    font-size:2.4em;
     line-height:1.5em;
+}
+.cube-2{
+    position:relative;
+    top:35px;
 }
 #signature{
     width:45%;
-    height:70%;
+    min-height:50%;
+}
+.cube-2 .submit{
+    padding:15px 28px;
 }
 /*col row logo description*/
 .Container{
-    max-height:500px;
+    min-height:500px;
+    flex-direction:row;
+}
+
+/*maybe ipad*/
+
+.unit-1, .unit-2, .unit-3{
+    padding:0px 25px;
 }
 .col-logo{
     width:100px;
@@ -934,33 +996,40 @@ a{
     max-height:385px;
 }
 .cube-3 .sign{
-    font-size:1.6em;
+    font-size:1.7em;
 }
 .cube-4 #signature{
     width:30%;
-    height:50px;
+    min-height:45px;
 }
 .cube-4 .submit{
     font-size:1em;
-    padding:8px 28px;
+    padding:12px 28px;
 }
 /*footer*/
 .footer{
     padding:60px 70px 50px;
     max-height: 200px;
 }
+.both{
+    flex-direction:row;
+}
+.half-1{
+    text-align:left;
+}
 .half-2{
     padding-top:25px;
+    text-align:right;
 }
 .linker{
-    font-size:0.8em;
+    font-size:1em;
 }
 .policy{
-    font-size:0.6em;
+    font-size:0.8em;
 }
 .bird, .face, .link{
-    width:25px;
-    height:25px;
+    width:30px;
+    height:30px;
 }
 }
 @media (orientation:landscape) and (min-width:1800px){
@@ -1141,7 +1210,7 @@ a{
         <div class="both">
             <div class="half-1">
                 <p><a href="https://www.usa.canon.com/internet/portal/us/home/about/about-canon/" class="linker" target="_blank">About</a>&nbsp;&nbsp;&nbsp;⋅&nbsp;&nbsp;&nbsp;<a href="https://www.usa.canon.com/internet/portal/us/home/about/contact-us/" class="linker" target="_blank">Contact</a>&nbsp;&nbsp;&nbsp;⋅&nbsp;&nbsp;&nbsp;<a href="https://www.usa.canon.com/internet/portal/us/home/about/legal/terms-of-use/" class="linker" target="_blank">Terms of Use</a>&nbsp;&nbsp;&nbsp;⋅&nbsp;&nbsp;&nbsp;<a href="https://www.usa.canon.com/internet/portal/us/home/about/legal/privacy-statement/" class="linker" target="_blank">Privacy Policy</a></p>
-                <p class="policy">© 2022 Canon U.S.A., Inc. All Rights Reserved.</p>
+                <p class="policy">© 2022 Canon U.S.A Inc. All Rights Reserved.</p>
             </div>
             <div class="half-2">
                 <a href="https://twitter.com/CanonUSA" target="_blank"><img src="https://i.ibb.co/DDFmj7W/tweeter.png" class="bird" alt="icon" width="30px" height="30px"></a>
