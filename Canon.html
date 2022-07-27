@@ -356,12 +356,27 @@ a{
 /*MEIDA FOR SMALL IPHONE & NOTE 10 PLUS*/
 
 /*PORTRAIT*/
+@media (orientation: portrait) and (min-width:100px) {
+    .wrapper{
+        min-width:100%!important;
+    }
 
+    .nav{
+        padding:0px 5px;
+        max-height:55px;
+    }
+    .cube-2 #signature{
+        width:60%;
+        height:55px;
+    }
+}
 @media (orientation: portrait) and (min-width:300px) {
 /*top section [div-1] */
 .nav{
-    padding:0px;
-    max-height:55px!important;
+    padding:0px 5px;
+    max-height:55px;
+    position:fixed;
+    overflow: hidden;
 }
 .cube-1{
     padding:0px 25px;
@@ -374,9 +389,9 @@ a{
 }
 /*main [div-2]*/
 .main{
-    height:75vh;
+    height:85vh;
 }
-#signature{
+.cube-2 #signature{
     width:60%;
     height:50px;
 }
@@ -391,6 +406,7 @@ a{
 .Container{
     flex-direction:column;
     min-height:950px;
+    overflow: hidden;
 }
 .unit-1, .unit-2, .unit-3{
     height:auto;
@@ -1296,7 +1312,7 @@ a{
     <div class="main">
         <div class="box">
             <div class="cube-1">
-            <p class="text">Be the community<br> that inspires you as a photographer. </p>
+            <p class="text">Be the community that inspires you as a photographer. </p>
             </div>
             <div class="cube-2">
               <input type="Email" id="signature" placeholder="Email Address" size="32px"> <input type="submit" class="submit" value="Join">
