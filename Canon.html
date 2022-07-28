@@ -119,16 +119,22 @@ a{
     justify-content:center;
     align-items:center;
 }
+input,
 input[type='text'], 
 input [type="email"]{
-    font-size:1.8aem!important;
+    font-size:1em!important;
+    touch-action:none;
+    -ms-touch-action:none;
+    -webkit-touch-action:none;
+    -moz-touch-action:none;
+    -o-touch-action:none;
 }
 #signature{
     position: relative;
     top:-16px;
     height:40px;
     padding:15px;
-    font-size:1.8em!important;
+    font-size:1em!important;
     border-radius:2px;
     -moz-border-radius:2px;
     -webkit-border-radius:2px;
@@ -137,6 +143,11 @@ input [type="email"]{
     border:2px solid #e3e3e3;
     margin-right:25px;
     width:40%;
+    touch-action:none;
+    -ms-touch-action:none;
+    -webkit-touch-action:none;
+    -moz-touch-action:none;
+    -o-touch-action:none;
 }
 #signature:hover{
     box-shadow:0px 0px 5px #ffffff;
