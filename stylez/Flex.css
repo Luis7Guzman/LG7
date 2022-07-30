@@ -980,15 +980,6 @@ h5{
     color:#fff;
     font-family:'aldrich', verdana, arial;
     margin:6px 0px 0px;
-    animation:h4in ease-in 500ms;
-}
-@keyframes h4in {
-    from{
-        opacity:0%;
-    }
-    to{
-        opacity:100%;
-    }   
 }
 .nav-toggle{
     display:block;
@@ -1006,15 +997,6 @@ h5{
     z-index:9999;
     border:0;
     filter:invert(100%);
-    animation:xout ease-in 500ms;
-}
-@keyframes xout{
-    from{
-        opacity:0%;
-    }
-    to{
-        opacity:100%;
-    }        
 }
 .nav-toggle[aria-expanded="true"]{
     background-image:url(https://i.ibb.co/Tr6Yd8f/x-pngrepo-com.png);
@@ -1425,15 +1407,6 @@ a .m-btn{
     color:#fff;
     font-family:'aldrich', verdana, arial;
     margin:12px 0px 0px 15px;
-    animation:h4in ease-in 500ms;
-}
-@keyframes h4in {
-    from{
-        opacity:0%;
-    }
-    to{
-        opacity:100%;
-    }   
 }
 .nav-toggle{
     display:block;
@@ -1451,15 +1424,6 @@ a .m-btn{
     z-index:9999;
     border:0;
     filter:invert(100%);
-    animation:xout ease-in 500ms;
-}
-@keyframes xout{
-    from{
-        opacity:0%;
-    }
-    to{
-        opacity:100%;
-    }        
 }
 .nav-toggle[aria-expanded="true"]{
     background-image:url(https://i.ibb.co/Tr6Yd8f/x-pngrepo-com.png);
