@@ -268,8 +268,9 @@ body{
     background-image: url('https://i.ibb.co/Sn3Pk48/ro00z0.jpg');
     background-position: center;
     background-size: cover;
-    filter: grayscale(35%);
+    filter: grayscale(50%);
     box-shadow: inset 0px 0px 15px #000000;
+    transition: ease 300ms;
 }
 .fade {
     filter: opacity(0.97);
@@ -277,19 +278,24 @@ body{
     height: 100%;
     background-color: #1e201c;
     box-shadow:inset 0px 0px 5px #000000;
-    transition: filter ease-in 300ms;
+    transition: filter ease 500ms;
 }
 .fade:hover {
-    transition-property: filter;
-    transition-timing-function: ease-in;
-    transition-duration: 350ms;
+    transition-property:filter;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
     filter: opacity(0);
+    
 }
 .icon {
     position: static;
     width: 100%;
     height: 100%;
-    transform: scale(1.2);
+    transition:500ms;
+}
+.icon:hover{
+    transition:500ms ease;
+    transform:scale(1.2);
 }
 
 .txtbox{
