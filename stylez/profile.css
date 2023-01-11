@@ -1,4 +1,4 @@
-/* PORTFOLIO CSS */
+/*PORTFOLIO CSS*/
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
 * {
     box-sizing: border-box;
@@ -254,24 +254,26 @@ body{
     max-height:450px;
     margin:15px 5px;
     border:2px solid #ffffff;
+    box-shadow:0px 0px 1px #ffffff;
+}
+.doc-1:hover{
+    box-shadow:0px 0px 15px #ffffff;
+    transition:ease 500ms;
 }
 .doc-2:hover{
-    box-shadow:0px 0px 7px #ffffff;
-    transform:scale(1.03);
-    transition: transform ease-in 50ms;
+    box-shadow:0px 0px 15px #ffffff;
+    transition:ease 500ms;
 }
 .doc-3:hover{
-    box-shadow:0px 0px 7px #ffffff;
-    transform:scale(1.03);
-    transition: transform ease-in 5 0ms;
+    box-shadow:0px 0px 15px #ffffff;
+    transition:ease 500ms;
 }
 .doc-1{
     background-image:url('https://i.ibb.co/Sxc0Rr6/coder.jpg');
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
-    transition: translate 700ms ease-in;
-    transform: scale(0);
+    transition:500ms ease;
     animation: dox1 1s ease 0.3s forwards;
     opacity:0;
 }
@@ -284,11 +286,6 @@ body{
         opacity:1;
         transform:translateY(0px);
     }
-}
-.doc-1:hover{
-    box-shadow:0px 0px 7px #ffffff;
-    transform:scale(1.03);
-    transition:transform ease-in 100ms;
 }
 .edu-doc, .exp-doc, .pro-doc{
     width:100%;
