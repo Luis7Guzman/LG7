@@ -231,7 +231,7 @@ body{
     width: 100%; 
     height: 100%;
     object-fit: cover;
-    animation: fade 26.5s ease infinite forwards;
+    animation: fade 26s ease infinite forwards;
     opacity:0;
 }
 @keyframes fade {
