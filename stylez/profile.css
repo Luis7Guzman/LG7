@@ -387,6 +387,205 @@ h5{
         transform:translateY(0px);
     }
 }
+/*SLIDER CONTENT*/
+#slider{
+	display:none;
+ }
+ #slider input[type=radio] {
+	display: none;
+ }
+ #slider label {
+	cursor:pointer;
+	text-decoration: none;
+ }
+ #slides {
+	position: absolute;
+    width:100%;
+    height:100vh;
+    margin:0;
+    top:0;
+    left:0;
+    margin:0;
+ }
+ #overflow {
+	width: 100%;
+    height:100vh;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+	margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+	margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+	margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+	margin-left: -300%;
+ }
+ #slides .inner {
+	transition: margin-left 800ms ease;
+	width: 400%;
+	line-height: 0;
+    height:100vh;
+    background-color: #0d0d0d;
+}
+ #slides .slide{
+	width: 25%;
+	float:left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    height:100vh;
+	color: #fff;
+ }
+ .slide-content{
+     height:100vh;
+ }
+ #slides .slide_1 {
+	background: #00171F;
+    box-shadow:inset 0 0 35px 0 #000000;
+	background-image:url('https://i.ibb.co/Sxc0Rr6/coder.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+    height:100vh;
+ }
+ #slides .slide_2 {
+	background: #00171F;
+    box-shadow:inset 0 0 35px 0 #000000;
+	background-image:url('https://i.ibb.co/mzVcZNR/layout.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+    height:100vh;
+ }
+ #slides .slide_3 {
+	background: #00171F;
+    box-shadow:inset 0 0 35px 0 #000000;
+	background-image:url('https://i.ibb.co/7tszZ4K/arch.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+    height:100vh;
+ }
+ #controls {
+	width: 100%;
+    height:80%;
+    top:5em;
+    right:0;
+    bottom:0;
+    left:0;
+	z-index:50;
+	position:absolute;
+ }
+ #controls label {
+	transition: opacity 0.2s ease-out;
+	display: none;
+	width: 100px;
+    height: 100%;
+	opacity: 0.2;
+    padding:0;
+    transition:width 250ms ease-in;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(1){
+    float:right;
+	margin:0;
+	display:block;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(1),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(2){
+    float:left;
+	margin:0;
+	display: block;
+ }
+ #bullets {
+	height:35px;
+	text-align: center;
+    position:relative;
+    z-index:50;
+    transform:translateY(35em);
+ }
+ #bullets label {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: rgb(29, 29, 29);
+	margin:13px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+	background: #fff;
+	filter:drop-shadow(0px 0px 5px #ffffff);
+ }
+ /*CONTENT SLIDES*/
+ .doc-m1, .doc-m2, .doc-m3{
+     width:100%;
+     height:100%;
+ }
+ .edu-mdoc, .exp-mdoc, .pro-mdoc{
+    width:100%;
+    height:100vh;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.e1m, .e2m, .e3m, .x1m, .x2m, .x3m, .d1m, .d2m, .d3m{
+    text-align:center;
+    color:#ffffff;
+    font-family:'aldrich', verdana, arial;
+    line-height:15px;
+}
+.h5m{
+    font-size:1.3em;
+}
+.rotm{
+    width:100%;
+    height:100%;
+}
+.rotxm{
+    margin:5px 30px;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.UDm, .SLm, .YUm, .H5m, .C3m, .JSm, .PSm, .MCm{
+    width:50px;
+    height:50px;
+}
+.EOAm{
+    width:100px;
+    height:60px;
+    position: relative;
+    right:25px;
+    bottom:10px;
+}
+.rotm .MCm{
+    border-radius: 25px;
+}
+.e2m, .x2m, .d2m{
+    margin:0;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+.e3m, .x3m, .d3m{
+    font-size:0.9em;
+}
+.e3m, .x3m{ padding:0 35px;}
+.d3m{padding:0 25px;}
+/*WIP*/
 
 /*PORTRAIT*/
 @media (orientation: portrait) and (min-width:315px){
@@ -563,31 +762,99 @@ h5{
     .page-3{
         -moz-transform:translateY(35px);
     }
-    .document{
-        padding-top:15px;
-        flex-direction: column;
-        transform:scale(80%);
+/*SLIDER CONTENT*/
+    #slider{
+        display:block;
+        margin:0;
+        width:100%;
+        height:100vh;
+        text-align: center;
     }
-    .doc-1, .doc-2, .doc-3{
-        margin:10px 0px;
-        max-width:350px;
-        max-height:100%;
+    .h5m{
+        font-size:1.1em;
     }
-    .e1, .x1, .d1, h5{
-        font-size:1em;
-        -moz-font-size:1em;
+    .UDm, .SLm, .YUm, .H5m, .C3m, .JSm, .PSm, .MCm{
+        height:3em;
+        width:3em;
     }
-    .e2, .d2, .x2{
-        flex-direction:row;
-        transform:scale(80%);
-        -moz-transform:scale(80%);
+    .EOAm{
+        left:0em;
     }
-    .e3, .x3, .d3, p{
-        font-size:0.8em;
-        -moz-font-size:0.8em;
+    .e2{
+        width:80%;
     }
-
+    .rotm{
+        width: auto;
+        margin:0;
+    }
+    .rotxm{
+        width:auto;
+        margin:0 2.5em;
+    }
+    .rotx3m{
+        width:auto;
+        margin:0 0.5em;
+    }
+    .e3m, .x3m, .d3m{
+        font-size:0.75em;
+    }
+    #bullets {
+        transform:translateY(33.5em);
+    }
+    #bullets label {
+        width: 12px;
+        height: 12px;
+    }
+}
+@media (orientation: portrait) and (min-width:350px){
+/*SLIDER CONTENT*/
+.h5m{
+    font-size:1.35em;
+}
+.UDm, .SLm, .YUm, .H5m, .C3m, .JSm, .PSm, .MCm{
+    width:3.5em;
+    height:3.5em;
+}
+.e2{
+    width:80%;
+}
+.e3m, .x3m, .d3m{
+    font-size:0.90em;
+}
+#bullets {
+    transform:translateY(37.5em);
+ }/*iphone 11 pro */
+ #bullets label {
+    width: 13px;
+    height: 13px;
+ }
+}
+@media (orientation: portrait) and (min-width:400px){        
+    /*SLIDER CONTENT*/
+    .h5m{
+        font-size:1.5em;
+    }
     
+    .e3, .x3, .d3{
+        font-size:1em;
+    }
+    .UD, .SL, .YU, .H5, .C3, .JS, .PS, .MC{
+        width:4em;
+        height:4em;
+    }
+    #bullets {
+        transform:translateY(40.5em);   
+    }
+     #bullets label {
+        width: 14px;
+        height: 14px;
+     }
+}
+@media (orientation: portrait) and (min-width:412px){
+    #bullets{
+        transform:translateY(42.5em);
+    }
+/* note 10+ & iphone 14 pro fits except iphone 6+ */
 }
 @media (orientation:portrait) and (min-width:600px){
     /*nav*/
@@ -623,7 +890,14 @@ h5{
         width:55px;
         height:55px;
     }
+     /*portoflio SLIDER*/
+    #slider{
+        display:none;
+    }
     /*portoflio*/
+    .main-3{
+        display:block;
+    }
 .doc-1, .doc-2, .doc-3{
     margin:10px 0px;
     max-width:585px;
@@ -836,42 +1110,55 @@ h5{
     }
 
     /*portfolio*/
-.page-3{
-    padding-top:55px;
-}
-.doc-1, .doc-2, .doc-3{
-    max-height:285px;
-    max-width:200px;
-}
-.edu-doc, .exp-doc, .pro-doc{
-    padding:5px;
-}
-.EOA{
-    width:55px;
-    height:30px;
-    right:15px;
-    bottom:4.5px;
+    .main-3{
+        display:none;
+    }
+    /*SLIDER CONTENT*/
+    #slider{
+        display:block;
+        margin:0;
+        width:100%;
+        height:100vh;
+        text-align: center;
+    }
+    .h5m{
+        font-size:0.9em;
+    }
+    .UDm, .SLm, .YUm, .H5m, .C3m, .JSm, .PSm, .MCm{
+        height:2.5em;
+        width:2.5em;
+    }
+    .e2{
+        width:80%;
+    }
+    .rotm{
+        width:auto;
+        margin:0;
+    }
+    .rotxm{
+        width:auto;
+        margin:0 5em;
+    }
+    .e3m, .x3m, .d3m{
+        font-size:0.75em;
+    }
 
+    #bullets {
+        display:none;
+        /*transform:translateY(17.5em);*/
+    }
 }
-.rot, .rotx{
-    width:25px;
-    height:25px;
-}
-.d2, .e2, .x2{
-    flex-direction:row;
-}
-.d1, .e1, .x1{
-    font-size:0.8em;
-}
-.e3 p{
-    font-size:0.6em;
-}
-.x3 p{
-    font-size:0.6em;
-}
-.d3 p{
-    font-size:0.6em;
-}
+@media (orientation:landscape) and (min-width:550px){
+    .rotx3m{
+        margin:0 3em;
+    }
+    .EOAm{
+    left:0px;
+    }
+    #controls{
+        top:4em;
+        height:70%;
+    }
 }
 @media (orientation:landscape) and (min-width:900px){
     /*nav*/
@@ -907,40 +1194,50 @@ h5{
         width:55px;
         height:55px;
     }
-    /*portfolio*/
-.doc-1, .doc-2, .doc-3{
-    max-height:600px;
-    max-width:350px;
-    margin:15px;
-}
-.edu-doc, .exp-doc, .pro-doc{
-    padding:5px 15px;
-}
-.d2, .e2, .x2{
-    flex-direction:column;
-}
-.rot, .rotx{
-    width:50px;
-    height:50px;
-}
-.EOA{
-    width:100px;
-    height:60px;
-    right:25px;
-    bottom:10px;
-}
-.d1, .e1, .x1{
-    font-size:1.3em;
-}
-.e3 p{
-    font-size:1.1em;
-}
-.x3 p{
-    font-size:1.1em;
-}
-.d3 p{
-    font-size:1.1em;
-}
+    /*portfolio SLIDER*/
+    #slider{
+        display:none;
+        }
+    /*PORTFOLIO*/
+        .main-3{
+            display:block;
+        }
+        .page-3{
+            padding-top:4.5em;
+        }
+    .doc-1, .doc-2, .doc-3{
+        max-height:600px;
+        max-width:350px;
+        margin:15px;
+    }
+    .edu-doc, .exp-doc, .pro-doc{
+        padding:5px 15px;
+    }
+    .d2, .e2, .x2{
+        flex-direction:column;
+    }
+    .rot, .rotx{
+        width:50px;
+        height:50px;
+    }
+    .EOA{
+        width:100px;
+        height:60px;
+        right:25px;
+        bottom:10px;
+    }
+    .d1, .e1, .x1{
+        font-size:1.3em;
+    }
+    .e3 p{
+        font-size:1.1em;
+    }
+    .x3 p{
+        font-size:1.1em;
+    }
+    .d3 p{
+        font-size:1.1em;
+    }
 }
 
 @media (orientation:landscape) and (min-width:1200px){
