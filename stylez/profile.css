@@ -759,8 +759,16 @@ h5{
         filter:drop-shadow(0px 0px 3px purple);
     }
     /*portfolio*/
+    .main-3{
+	display:none;    
+    }
     .page-3{
         -moz-transform:translateY(35px);
+    }
+    .document{
+        padding-top:15px;
+        flex-direction: column;
+    	transform:scale(80%);
     }
 /*SLIDER CONTENT*/
     #slider{
